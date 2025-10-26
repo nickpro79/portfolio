@@ -2,23 +2,30 @@ import React from "react";
 
 export default function Contact({ contact }) {
   return (
-    <section className="py-20 text-center">
-      <h2 className="text-3xl font-bold mb-6">Contact</h2>
-      <p>
-        Email:{" "}
-        <a className="text-blue-600" href={`mailto:${contact.email}`}>
-          {contact.email}
-        </a>
-      </p>
-      <p>Phone: {contact.phone}</p>
-      <p>Location: {contact.address}</p>
-      <div className="mt-4 space-x-4">
-        <a href={contact.linkedin} target="_blank" className="text-blue-600">
-          LinkedIn
-        </a>
-        <a href={contact.github} target="_blank" className="text-gray-800">
-          GitHub
-        </a>
+    <section>
+      <h2>Contact</h2>
+      <div className="d-flex flex-column align-items-center text-center">
+        <p>
+          Email: <a href={`mailto:${contact.email}`}>{contact.email}</a>
+        </p>
+        <p>Phone: {contact.phone}</p>
+        <p>Address: {contact.address}</p>
+        <div>
+          <a
+            href={contact.linkedin}
+            target="_blank"
+            className="btn btn-outline-primary btn-custom"
+          >
+            LinkedIn
+          </a>
+          <a
+            href={contact.github}
+            target="_blank"
+            className="btn btn-outline-dark btn-custom"
+          >
+            GitHub
+          </a>
+        </div>
       </div>
     </section>
   );
