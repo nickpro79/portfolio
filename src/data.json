@@ -1,0 +1,80 @@
+{
+  "name": "Nikhil Praveen",
+  "title": "Software Developer at UST",
+  "about": "Software Developer trained in developing and deploying Microservices-based applications using ASP.NET Core Web API, .NET MVC, MS SQL Server, and Angular. Proficient in containerization, Azure deployment, and database management. Passionate about building intelligent, scalable, and responsive web applications.",
+  "contact": {
+    "email": "nikhilpraveen7777@gmail.com",
+    "phone": "9744721183",
+    "address": "Amman Kovil Road, Ettumanoor, Kottayam",
+    "linkedin": "https://www.linkedin.com/in/nikhil-praveen-86b431266",
+    "github": "https://github.com/NICKPRO79"
+  },
+  "skills": [
+    "ASP .Net Core Web API",
+    "SQL (MySQL and MS SQL Server)",
+    "Python",
+    "Java",
+    "React",
+    "Angular",
+    "Microsoft Azure (AZ-900)",
+    "C Programming",
+    "Data Structures"
+  ],
+  "projects": [
+    {
+      "title": "Fake News Detection Website",
+      "description": "Created a system to identify fake news leveraging Domain Adversarial Neural Network (DANN) for improved accuracy. Utilized TensorFlow and Keras for model training, and implemented the system with a Next.js frontend and Flask backend."
+    },
+    {
+      "title": "SecureMind",
+      "description": "Developed a website that allows users to anonymously report crime incidents, raising awareness and facilitating access to mental health support. Built using Angular, .NET, and Microsoft SQL Server."
+    },
+    {
+      "title": "Resume Parser",
+      "description": "Developed a resume parsing and PDF generation application using FastAPI and React, enabling users to upload resumes, extract structured data, and generate clean PDF versions. Integrated authentication with JWT, DSPy, and Azure OpenAI for intelligent text summarization."
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Developer",
+      "company": "UST",
+      "duration": "2024‑07 – present",
+      "location": "Kochi",
+      "details": "Trained in developing and deploying Microservices-based applications using ASP.NET Core Web API, .NET MVC, MS SQL Server, and Angular. Experienced with containerization and Azure deployment."
+    },
+    {
+      "role": "Teachnook Internship",
+      "company": "",
+      "duration": "",
+      "location": "",
+      "details": "Trained in HTML, CSS, JavaScript, and Bootstrap to design responsive websites. Experienced in integrating public APIs for data display."
+    },
+    {
+      "role": "NeST Internship",
+      "company": "",
+      "duration": "",
+      "location": "",
+      "details": "Trained in basics of machine learning using scikit-learn, Keras, and PyTorch."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science",
+      "institution": "Mar Athanasius College of Engineering, Kothamangalam",
+      "year": "2020 – 2024",
+      "cgpa": "8.43"
+    },
+    {
+      "degree": "CBSE",
+      "institution": "Chavara CMI Public School, Pala",
+      "year": "2018 – 2020",
+      "cgpa": "9.54"
+    },
+    {
+      "degree": "CBSE",
+      "institution": "Marian Senior Secondary School, Kottayam",
+      "year": "2017 – 2018",
+      "cgpa": "8.4"
+    }
+  ]
+}
