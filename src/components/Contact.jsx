@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Contact({ contact }) {
   return (
-    <section>
+    <section id="contact">
       <h2>Contact</h2>
       <div className="d-flex flex-column align-items-center text-center">
         <p>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Education({ education }) {
   return (
-    <section style={{ backgroundColor: "#f8f9fa" }}>
+    <section id="education" style={{ backgroundColor: "#f8f9fa" }}>
       <h2>Education</h2>
       <div className="flex-center">
         {education.map((edu, idx) => (

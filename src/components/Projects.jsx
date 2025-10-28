@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects({ projects }) {
   return (
-    <section style={{ backgroundColor: "#f8f9fa" }}>
+    <section style={{ backgroundColor: "#f8f9fa" }} id="projects">
       <h2>Projects</h2>
       <div className="flex-center">
         {projects.map((p, idx) => (
