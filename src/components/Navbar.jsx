@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-custom fixed-top">
       <div className="container-fluid justify-content-between px-4">
         <a className="navbar-brand fw-bold text-primary fs-4" href="#hero">
-          Nikhil<span style={{ color: "#007bff" }}>.</span>
+          Nikhil<span style={{ color: "#007bff" }}></span>
         </a>
 
         <button
