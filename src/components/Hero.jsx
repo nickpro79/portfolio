@@ -22,14 +22,14 @@ export default function Hero({ name, title, about }) {
           <h5 className="fw-semibold mb-3">Get in Touch</h5>
           <div className="d-flex justify-content-center gap-4 mb-3">
             <a
-              href="mailto:nikhilpraveen@example.com"
+              href="mailto:nikhilpraveen7777@gmail.com"
               className="contact-icon"
               aria-label="Email"
             >
               <FaEnvelope size={28} />
             </a>
             <a
-              href="https://github.com/your-github"
+              href="https://github.com/NICKPRO79"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-icon"
@@ -38,7 +38,7 @@ export default function Hero({ name, title, about }) {
               <FaGithub size={28} />
             </a>
             <a
-              href="https://linkedin.com/in/your-linkedin"
+              href="https://www.linkedin.com/in/nikhil-praveen-86b431266"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-icon"
