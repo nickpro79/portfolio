@@ -1,59 +1,82 @@
-import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import React, { useState } from "react";
+import { FaGithub, FaLinkedin, FaEnvelope, FaDownload } from "react-icons/fa";
 
 export default function Hero({ name, title, about }) {
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = () => {
+    setDownloading(true);
+
+    const link = document.createElement("a");
+    link.href = "/Nikhil_Praveen_Resume.pdf"; // put your actual file name
+    link.download = "Nikhil_Praveen_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    setTimeout(() => {
+      setDownloading(false);
+      // Show a small toast/alert
+      alert("📄 Resume downloaded! Check your downloads folder.");
+    }, 1000);
+  };
+
   return (
     <section id="hero" className="hero-section text-center text-white py-5">
-      <div className="container py-5">
-        <h1 className="fw-bold display-5">{name}</h1>
-        <p className="lead mb-3">{title}</p>
-        <p className="w-75 mx-auto mb-4">{about}</p>
+      <div className="container">
+        <h1 className="display-4 fw-bold">{name}</h1>
+        <h3 className="mb-3">{title}</h3>
+        <p className="lead mx-auto" style={{ maxWidth: "700px" }}>
+          {about}
+        </p>
 
-        <a
-          href="/Nikhil_Praveen_Resume.pdf"
-          download
-          className="btn btn-light mt-3 mb-4"
-        >
-          📄 Download Resume
-        </a>
-
-        {/* Contact Section inside Hero */}
-        <div className="contact-hero mt-4">
-          <h5 className="fw-semibold mb-3">Get in Touch</h5>
-          <div className="d-flex justify-content-center gap-4 mb-3">
-            <a
-              href="mailto:nikhilpraveen7777@gmail.com"
-              className="contact-icon"
-              aria-label="Email"
-            >
-              <FaEnvelope size={28} />
-            </a>
-            <a
-              href="https://github.com/NICKPRO79"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-icon"
-              aria-label="GitHub"
-            >
-              <FaGithub size={28} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/nikhil-praveen-86b431266"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-icon"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin size={28} />
-            </a>
-          </div>
+        {/* Contact / Social Icons */}
+        <div className="d-flex justify-content-center gap-4 mt-4 mb-4">
           <a
-            href="mailto:nikhilpraveen@example.com"
-            className="btn btn-outline-light"
+            href="https://github.com/NICKPRO79"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white fs-3"
           >
-            ✉️ Contact Me
+            <FaGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nikhil-praveen-86b431266"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white fs-3"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="mailto:nikhilpraveen7777@gmail.com"
+            className="text-white fs-3"
+          >
+            <FaEnvelope />
           </a>
         </div>
+
+        {/* Download Resume Button */}
+        <button
+          onClick={handleDownload}
+          className="btn btn-light px-4 py-2 fw-semibold"
+          disabled={downloading}
+        >
+          {downloading ? (
+            <>
+              <span
+                className="spinner-border spinner-border-sm me-2"
+                role="status"
+              ></span>
+              Downloading...
+            </>
+          ) : (
+            <>
+              <FaDownload className="me-2" />
+              Download Resume
+            </>
+          )}
+        </button>
       </div>
     </section>
   );
